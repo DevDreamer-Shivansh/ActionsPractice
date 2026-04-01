@@ -1,0 +1,14 @@
+name: HTML Check
+
+on: push
+
+jobs:
+  check-html:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Show HTML
+        run: cat ActionsPractice/index.html
